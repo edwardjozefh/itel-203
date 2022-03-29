@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<div>
+		<form action="register.php" method="post" target="_blank">
+			<h1>REGISTER</h1>
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" placeholder="user@email.com"><br>
+				<label for="password">Password:</label><br>
+				<input type="password" id="password" name="password" placeholder="Enter password"><hr>
+			<h2>PERSONAL INFORMATION</h2>
+				<label for="fname">First Name:</label><br>
+				<input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+				<label for="lname">Last Name:</label><br>
+				<input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
+				<label for="birthday">Birthday:</label><br>
+				<input type="date" id="birthday" name="birthday"><br>
+				<label for="age">Age:</label><br>
+				<input type="number" id="age" name="age" value="20" min="12" max="100"><br>
+				<label for="gender">Gender:</label>
+				<select>
+					<option>Male</option>
+					<option>Female</option>
+				</select><br>
+				<label for="phone">Contact No.:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+63**********"><hr>
+			<h2>PROFILE</h2>
+				<label for="username">Username:</label><br>
+				<input type="text" id="username" name="username" placeholder="choose a unique username"><br>
+				<label for="bio">Add bio</label><br>
+				<textarea name="bio" placeholder="describe yourself"></textarea><br>
+				<label for="avatar">Upload an avatar</label><br>
+				<input type="file" id="avatar" name="avatar"><br>
+			<h4>GAMES OWNED</h4>
+				<input type="checkbox" id="game1" name="game1" value="Minecraft">
+				<label for="game1">Minecraft</label><br>
+				<input type="checkbox" id="game2" name="game2" value="Call of Duty">
+				<label for="game2">Call of Duty</label><br>
+				<input type="checkbox" id="game3" name="game3" value="Fortnite">
+				<label for="game3">Fortnite</label><br>
+				<input type="checkbox" id="game4" name="game4" value="Apex Legends">
+				<label for="game4">Apex Legends</label><br>
+				<input type="checkbox" id="game5" name="game5" value="Mobile Legends">
+				<label for="game5">Mobile Legends</label><hr>
+
+			<input type="submit" name="submit" value="SUBMIT">
+			<input type="reset" name="reset" value="CLEAR FORM">
+
+		</form>
+	</div>
+</body>
+</html>
